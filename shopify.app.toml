@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "stephens-app"
+client_id = "c2adb48d6cba864d6807a9906d57d64f"
+application_url = "https://jeep-forever-pi-desktops.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://jeep-forever-pi-desktops.trycloudflare.com/auth/callback",
+  "https://jeep-forever-pi-desktops.trycloudflare.com/auth/shopify/callback",
+  "https://jeep-forever-pi-desktops.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-6a338a4f.myshopify.com"
